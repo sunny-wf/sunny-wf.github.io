@@ -5,12 +5,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Archive: 2022/3</title>
+    <title> - Hexo</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Fechin,"> 
-    
+    <meta name="description" content="usb to ttl机顶盒装应用
+1.(首先要查看小板上的芯片型号,找到对应的驱动安装上,实在找不到的话可以用360驱动大师)在设备管理器中找到的TTL转接器所属的COM口，设置波特率为115200,"> 
     <meta name="author" content="John Doe"> 
     <link rel="alternative" href="atom.xml" title="Hexo" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -20,16 +21,18 @@
     
     
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:title" content="Archive: 2022/3"/>
-    
+    <meta name="twitter:title" content=" - Hexo"/>
+    <meta name="twitter:description" content="usb to ttl机顶盒装应用
+1.(首先要查看小板上的芯片型号,找到对应的驱动安装上,实在找不到的话可以用360驱动大师)在设备管理器中找到的TTL转接器所属的COM口，设置波特率为115200,"/>
     
     
     
     
     <meta property="og:site_name" content="Hexo"/>
     <meta property="og:type" content="object"/>
-    <meta property="og:title" content="Archive: 2022/3"/>
-    
+    <meta property="og:title" content=" - Hexo"/>
+    <meta property="og:description" content="usb to ttl机顶盒装应用
+1.(首先要查看小板上的芯片型号,找到对应的驱动安装上,实在找不到的话可以用360驱动大师)在设备管理器中找到的TTL转接器所属的COM口，设置波特率为115200,"/>
     
 <link rel="stylesheet" href="/css/diaspora.css">
 
@@ -38,39 +41,79 @@
 <body class="loading">
     <span id="config-title" style="display:none">Hexo</span>
     <div id="loader"></div>
-    <div id="single" class="page">
-    <div id="top">
-        <a class="iconfont icon-left image-icon" href="javascript:history.back()"></a>
-    </div>
-    <div class="section">
-        <div class="article">
-            <div class="main">
-                <div class="content">
-                    <div class="timeline">
-                      <h2 class="timeline-title">归档: 2篇</h2><hr>
-                      
-                      
-                        
-                          <h3 class="timeline-subtitle">2022</h3>
-                        
-                        <div class="timeline-item">
-                          <time>2022-05-01</time>
-                          <a target="_self" href="/2022/05/01/USB%20TO%20TTL%20%E7%BB%99%E6%9C%BA%E9%A1%B6%E7%9B%92%E5%AE%89%E8%A3%85APP/"></a>
-                        </div>
-                      
-                        
-                        <div class="timeline-item">
-                          <time>2022-03-06</time>
-                          <a target="_self" href="/2022/03/06/Wellcome/"></a>
-                        </div>
-                      
-                    </div>
-                </div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://example.com"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle"></h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
             </div>
+            <div id="qr"></div>
         </div>
     </div>
+    <div class="scrollbar"></div>
 </div>
 
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title"></h1>
+        <div class="stuff">
+            <span>五月 01, 2022</span>
+            
+
+        </div>
+        <div class="content markdown">
+            <p><strong>usb to ttl机顶盒装应用</strong></p>
+<p>1.(首先要查看小板上的芯片型号,找到对应的驱动安装上,实在找不到的话可以用360驱动大师)在设备管理器中找到的TTL转接器所属的COM口，设置波特率为<strong>115200</strong></p>
+<p>2.打开电脑端串口调试软件xshell，点击标题栏中的新建，在弹出的窗口中右侧协议一行，点击下拉列表，点击SERIAL,然后设置端口号和比特率选中电脑中端口号,点击<strong>115200</strong>，这里要与电脑端设置一致。点击下面的确定，关闭窗口。</p>
+<p>3.刷机小板与机顶盒串口对应针脚连接起来,小板的GND与机顶盒GND连接.TX、RX交叉连接(如果没有反应的话就把tx和rx反过来接)</p>
+<p>4.把u盘插入机顶盒的USB口,点击软件xshell中的连接，显示<strong>connected</strong>表示软件已经与刷机小板正确通讯</p>
+<p>5,给机顶盒通电，在xshell软件窗口就可以看到不断滚动的代码，这是机顶盒在启动,启动完了之后键入命令： df<br>然后找到的U盘位置,cd (这里中输入你的优盘的位置)注意:cd和cp后面都要加一个空格,否则会报错<br>之后,cp(空格) install(空格) (这里输入应用的名称).apk<br>回车,当屏幕上出现succeed时,即为成功</p>
+<p>概括:安装驱动，查看端口号，设置波特率；打开软件设置端口号和波特率；连接刷机小板和机顶盒；安装第三方桌面</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="true">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title="0" data-url="http://link.hhtjim.com/163/425570952.mp3"></li>
+                        
+                    
+                        
+                            <li title="1" data-url="http://link.hhtjim.com/163/425570952.mp3"></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="true"
+        data-ae="false"
+        data-ci=""
+        data-cs=""
+        data-r=""
+        data-o=""
+        data-a=""
+        data-d="false"
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
 </body>
 
 <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
